@@ -15,7 +15,7 @@ var bgImg = new Image();
 bgImg.onload = function () {
     bgReady = true;
 }
-bgImg.src = "../src/images/games/images/background.png";
+bgImg.src = "./web/src/images/games/images/background.png";
 
 // 准备英雄图片
 var heroReady = false;
@@ -23,7 +23,7 @@ var heroImg = new Image();
 heroImg.onload = function () {
     heroReady = true;
 }
-heroImg.src = "../src/images/games/images/hero.png";
+heroImg.src = "./web/src/images/games/images/hero.png";
 
 // 准备怪兽图片
 var monsterReady = false;
@@ -31,7 +31,7 @@ var monsterImg = new Image();
 monsterImg.onload = function () {
     monsterReady = true;
 }
-monsterImg.src = "../src/images/games/images/monster.png";
+monsterImg.src = "./web/src/images/games/images/monster.png";
 
 // 定义游戏对象
 var hero = {
