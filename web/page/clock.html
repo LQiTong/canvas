@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 CLOCK</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #modelClock {
+            width: 600px;
+            height: 34px;
+            line-height: 34px;
+            margin: 20px auto;
+            text-align: center;
+            color: #FF9B00;
+            font-size: 30px;
+        }
+
+        #modelClock>span {
+            color: #000;
+        }
+
+        .clocks {
+            height: 500px;
+            margin: 25px auto;
+            position: relative;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>HTML5 时钟</h2>
+    </header>
+    <div class="clocks">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
+    <div id="modelClock"></div>
+</body>
+
+</html>
+<script src="../js/clock.js"></script>
+<script>
+    var divModelClock = $('#modelClock');
+    var now = 0, year, month, day, h, m, s;
+    setInterval(function () {
+        now = new Date();
+        year = now.getFullYear();
+        month = (now.getMonth() + 1) < 10 ? '0' + (now.getMonth() + 1) : now.getMonth() + 1;
+        day = now.getDate() < 10 ? '0' + now.getDate() : now.getDate();
+        h = now.getHours() < 10 ? '0' + now.getHours() : now.getHours();
+        m = now.getMinutes() < 10 ? '0' + now.getMinutes() : now.getMinutes();
+        s = now.getSeconds() < 10 ? '0' + now.getSeconds() : now.getSeconds();
+        divModelClock.html(year + ' <span>年</span> ' + month + ' <span>月</span> ' + day + ' <span>日</span> ' + h + ' <span>时</span> ' + m + ' <span>分</span> ' + s + ' <span>秒</span>');
+    }, 1000)
+</script>

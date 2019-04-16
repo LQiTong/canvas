@@ -1,0 +1,31 @@
+body {
+    border: 2px black solid;
+}
+
+#canvas {
+    border: 1px solid black;
+    background: #DCDCDC;
+    margin-left: 120px;
+}
+
+#tip {
+    background: #FAEBD7;
+}
+
+p {
+    text-align: center;
+}
+
+button#reset {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color: #FF9B00;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    width: 220px;
+    height: 34px;
+    cursor: pointer;
+}

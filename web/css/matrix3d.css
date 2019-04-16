@@ -1,0 +1,7 @@
+.matrix_box {
+    width: 150px;
+    height: 150px;
+    background-color: #a0b3d6;
+    -webkit-box-shadow:2px 2px 4px rgba(0,0,0,.6);
+            box-shadow:2px 2px 4px rgba(0,0,0,.6);
+}
