@@ -14,9 +14,7 @@
 </html>
 <script src="../js/canvas.js"></script>
 ```
-
 然后，是canvas.js的内容，主要操作都在js中：
-
 ```
 var cvs = document.createElement('canvas'); // 创建canvas标签
 var ctx = cvs.getContext('2d');
@@ -37,7 +35,6 @@ bgImg.src = "../src/images/games/images/background.png";
 ```
 ![背景图片](https://img2018.cnblogs.com/blog/1663165/201904/1663165-20190416114258280-371118432.png)
 ```
-
 // 准备英雄图片
 var heroReady = false;
 var heroImg = new Image();
@@ -59,7 +56,6 @@ monsterImg.src = "../src/images/games/images/monster.png";
 ```
 ![怪兽图片](https://img2018.cnblogs.com/blog/1663165/201904/1663165-20190416114326540-1591165621.png)
 ```
-
 // 定义游戏对象
 var hero = {
     speed: 256  // 控制英雄每秒移动多少像素
@@ -165,7 +161,6 @@ reset();
 main();
 ```
 ![游戏完成的效果图](https://img2018.cnblogs.com/blog/1663165/201904/1663165-20190416145226245-610234140.jpg)
-
 初来博客园，还有许许多多不了解的地方，还请多多谅解。
 ---
 [成果展示](https://lqitong.github.io/canvas/)
